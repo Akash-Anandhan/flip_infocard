@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+      
+
+*{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+body{
+    background: rgb(125,51,138);            
+    background: linear-gradient(166deg, rgba(125,51,138,1) 0%, rgba(72,34,133,1) 35%, rgba(255,0,211,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+p{
+    color: white;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    position: relative;
+    
+}
+.grid div{
+    color: rgba(0, 0, 0, 0);
+}
+.circle{
+    background: rgb(255,0,243);
+    background: linear-gradient(228deg, rgba(255,0,243,1) 0%, rgba(233,233,233,1) 100%);
+    height: 300px;
+    border: none;
+    border-radius: 50%;
+    backdrop-filter: blur(100px);
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+.master{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    backdrop-filter: blur(200px);
+}
+
+.wrapper{
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    height:300px;
+    width:200px;
+    
+ }
+.card{
+    position: absolute;         
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(300px);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 25px;
+ }
+.back{
+    height: 100%;
+    backface-visibility: hidden;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(300px);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    border-radius: 25px;
+    top: 0%;
+}
+.profile{
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    border-radius: 50%;
+}
+.name{
+    z-index: 10;
+    color: white;
+    position: absolute;
+    top: 52%;
+    font-weight: 700;
+    font-size: 20px;            
+}
+.details{
+    color: white;
+    position: absolute;
+    top: 63%;
+    font-weight: 400;
+    font-size: 10px; 
+
+}
+.stars_flex{
+    display: flex;
+    width: 66%;
+    justify-content: space-between;
+    position: absolute;
+    top: 73%;
+
+}
+.star{
+    height: 20px;
+    z-index: 100;            
+}
+.half{
+    padding-right:7%;
+}
+.prompt{
+    z-index: 101;
+    color: white;
+    text-align: center;
+    font-size: 8px;
+    position: absolute;
+    bottom: 3%;
+}
+.description{
+    color: white;
+    z-index: 200;
+    font-size: 10px;
+    padding: 5px 10px 0px 15px ;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    line-height: 13px;
+    font-weight: 300;
+}
+.title{
+    font-weight: 500;
+    text-decoration: underline;
+    color: white;
+    z-index: 200;            
+    font-weight: 500;
+    font-size: 11px;
+    margin-bottom: 5px;
+    
+    
+}
+.skills{
+    position: absolute;
+    font-size: 12px;
+    top: 25%;
+}
+.stats{
+    position: absolute;
+    width: 100%;
+    top: 34%;
+}
+.onepart{
+width: 100%;
+display: grid;
+grid-template-columns: 25% 80%;
+align-items: center;
+padding-left: 5%;
+
+}
+.percentagebar{
+width: 70%;
+background-color: rgba(247, 247, 247, 0.3);
+display: flex;
+height: 4px;
+border-radius: 5px;
+
+}
+.percentage{
+width: 95%;
+background-color: rgb(255, 255, 255);
+border-radius: 5px;
+
+}
+.skill_name{
+margin-right: 5%;
+color: white;
+font-size: 11px;
+
+}
+.jquery{
+width: 70%;
+}
+.java{
+width: 80%;
+}
+.css{
+width: 90%;
+}
+
